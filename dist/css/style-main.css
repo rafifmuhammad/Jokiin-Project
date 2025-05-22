@@ -163,6 +163,7 @@
 /* Content Style */
 
 .content {
+    min-height: 100vh;
     padding-top: 64px;
     padding-bottom: 64px;
 }
