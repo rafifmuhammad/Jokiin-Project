@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../../dist/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <title>Penilaian | Jokiin</title>
+</head>
+
+<body>
+    <!-- Sidebar Start -->
+    <section class="sidebar">
+        <div class="box">
+            <h1>Joki.In</h1>
+            <i class="ri-menu-2-line"></i>
+        </div>
+        <div class="box">
+            <i class="ri-dashboard-line"></i>
+            <a href="./dashboard.html">Dashboard</a>
+        </div>
+        <div class="box">
+            <i class="ri-group-line"></i>
+            <a href="#">Manajemen Pengguna</a>
+        </div>
+        <div class="box">
+            <i class="ri-message-2-line"></i>
+            <a href="./mail_management.html">Manajemen Pesan</a>
+        </div>
+        <div class="box">
+            <i class="ri-list-check-3"></i>
+            <a href="./tasks_list.html">Tugas-tugas</a>
+        </div>
+        <div class="box active">
+            <i class="ri-star-half-line"></i>
+            <a href="#">Penilaian</a>
+        </div>
+        <div class="box">
+            <i class="ri-home-5-line"></i>
+            <a href="./../home.html">Beranda</a>
+        </div>
+        <div class="box">
+            <i class="ri-logout-circle-line"></i>
+            <a href="./../../index.html">Keluar</a>
+        </div>
+    </section>
+    <!-- Sidebar End -->
+
+    <!-- Main-app -->
+    <div class="main-app">
+        <!-- Header Start -->
+        <section class="header">
+            <div class="container">
+                <div class="box-header">
+                    <div class="box">
+                        <h1>Penilaian Pengguna</h1>
+                    </div>
+                    <div class="box">
+                        <form action="">
+                            <input type="text" name="cari" id="cari" placeholder="Cari sesuatu">
+                        </form>
+                        <img src="./../../img/user-1.jpg" alt="user-1">
+                        <h2>John Nash</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Header End -->
+
+        <!-- Content Start -->
+        <section class="content">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="./dashboard.html">Dashboard</a>
+                    <span>Penilaian Pengguna</span>
+                </div>
+
+                <div class="box-content">
+                    <div class="box">
+                        <h1 class="title">Tabel Penilaian Pengguna</h1>
+                        <div>
+                            <form action="">
+                                <input type="text" name="cari" id="cari" placeholder="Cari dalam tabel">
+                                <button>Cari</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <table class="data-table">
+                            <tr>
+                                <th>No.</th>
+                                <th>Kode Pengguna</th>
+                                <th>Kode Penjoki</th>
+                                <th>Rating</th>
+                                <th>Komentar</th>
+                                <th>Dinilai Pada</th>
+                                <th>Aksi</th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>user_2211</td>
+                                <td>okewowo_212</td>
+                                <td class="rating">
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                    <i class="ri-star-fill"></i>
+                                </td>
+                                <td class="desc">Gacor joki kp cuma beberapa jam siap aja, ngandalin gpt anjir. Pantes jokinya lama, sini tak ceplok 5 bintang</td>
+                                <td>20/06/2025</td>
+                                <td class="button-action">
+                                    <button class="warning">Ubah</button>
+                                    <button>Detail</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="box">
+                        <button>Sebelumnya</button>
+                        <button>1</button>
+                        <button>Lanjut</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content End -->
+
+        <!-- Footer Start -->
+        <footer>
+            <section class="footer">
+                <p>Copyright 2025 &copy; Rafifbanner</p>
+            </section>
+        </footer>
+        <!-- Footer End -->
+    </div>
+    <!-- Main-app -->
+</body>
+
+</html>

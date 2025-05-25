@@ -24,7 +24,7 @@
                     <h2>Joki.In</h2>
                     <ul>
                         <li><a href="#" class="active">Beranda</a></li>
-                        <li><a href="">Dashboard</a></li>
+                        <li><a href="./dashboard/dashboard.html">Dashboard</a></li>
                         <li><a href="./riwayat.html">Riwayat</a></li>
                     </ul>
                 </div>
@@ -138,6 +138,21 @@
     </section>
     <!-- Content End -->
 
+    <!-- Modal -->
+    <div id="modalAmbilTugas" class="custom-modal">
+        <div class="custom-modal-content">
+            <div class="modal-header">
+                <h2>Konfirmasi Pengambilan Tugas</h2>
+                <i class="ri-close-line close-modal"></i>
+            </div>
+            <p>Apakah kamu yakin ingin mengambil tugas ini?</p>
+            <div style="margin-top:24px; text-align:right;">
+                <button class="button" id="btnAmbilConfirm">Ya, Ambil</button>
+                <button class="button" id="btnBatalModal" style="background:#bfc0c0;color:#003049;">Batal</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer Start -->
     <footer>
         <section class="footer">
@@ -168,6 +183,39 @@
         </section>
     </footer>
     <!-- Footer End -->
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const ambilTugasBtns = document.querySelectorAll('.box-project-item .button');
+            const modal = document.getElementById('modalAmbilTugas');
+            const closeModal = document.querySelector('.close-modal');
+            const btnBatal = document.getElementById('btnBatalModal');
+            const btnAmbilConfirm = document.getElementById('btnAmbilConfirm');
+
+            ambilTugasBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    if (btn.innerText.trim() === 'Ambil Tugas') {
+                        e.preventDefault();
+                        modal.style.display = 'flex';
+                    }
+                });
+            });
+
+            closeModal.onclick = () => modal.style.display = 'none';
+            btnBatal.onclick = () => modal.style.display = 'none';
+
+            btnAmbilConfirm.onclick = () => {
+                modal.style.display = 'none';
+                alert('Tugas berhasil diambil!');
+            };
+
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        });
+    </script>
 </body>
 
 </html>

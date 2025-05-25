@@ -467,3 +467,230 @@ label p {
 .edit-profile .box-edit-profile .box option {
     font-size: 14px;
 }
+
+
+/* Detail Style */
+
+.detail {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.detail h1 {
+    color: #003049;
+    margin-bottom: 16px;
+}
+
+.custom-table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+.custom-table th {
+    min-width: 160px;
+    font-weight: bold;
+    font-size: 16;
+    text-align: left;
+}
+
+.custom-table th,
+td {
+    border: 1px solid #bfc0c0;
+    padding: 8px;
+}
+
+.custom-table:last-of-type tr:first-child th:first-child,
+.custom-table:last-of-type tr:first-child td:first-child {
+    border-top-left-radius: 4px;
+}
+
+.custom-table:last-of-type tr:first-child th:last-child,
+.custom-table:last-of-type tr:first-child td:last-child {
+    border-top-right-radius: 4px;
+}
+
+.custom-table:last-of-type tr:last-child th:first-child,
+.custom-table:last-of-type tr:last-child td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.custom-table:last-of-type tr:last-child th:last-child,
+.custom-table:last-of-type tr:last-child td:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+.custom-table th:not(:last-child),
+td:not(:last-child) {
+    border-right: none;
+}
+
+.custom-table tr:not(:last-child) th,
+tr:not(:last-child) td {
+    border-bottom: none;
+}
+
+.custom-table-vertical {
+    border-collapse: separate;
+    border-spacing: 0;
+    max-width: 320px;
+}
+
+.custom-table-vertical th {
+    max-width: 240px;
+}
+
+.custom-table-vertical td {
+    max-width: 240px;
+}
+
+.custom-table-vertical th,
+.custom-table-vertical td {
+    border: 1px solid #bfc0c0;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.custom-table-vertical th:not(:last-child),
+.custom-table-vertical td:not(:last-child) {
+    border-right: none;
+}
+
+.custom-table-vertical tr:not(:last-child) th,
+.custom-table-vertical tr:not(:last-child) td {
+    border-bottom: none;
+}
+
+.custom-table-vertical tr:last-child td {
+    border-bottom: 1px solid #bfc0c0;
+}
+
+.custom-table-vertical tr:first-child th:first-child {
+    border-top-left-radius: 4px;
+}
+
+.custom-table-vertical tr:first-child th:last-child {
+    border-top-right-radius: 4px;
+}
+
+.custom-table-vertical tr:last-child td:first-child {
+    border-bottom-left-radius: 4px;
+}
+
+.custom-table-vertical tr:last-child td:last-child {
+    border-bottom-right-radius: 4px;
+}
+
+.status-table {
+    width: 140px;
+    padding: 4px 8px;
+    background-color: #c1121f;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.table-button {
+    color: white;
+    background-color: #c1121f;
+    border-width: 0;
+    padding: 4px 8px;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.table-button:last-child {
+    margin-left: 8px;
+}
+
+.table-button.message {
+    background-color: #0ead69;
+}
+
+
+/* Rating Style */
+
+.rating {
+    display: flex;
+    align-items: center;
+}
+
+.rating i {
+    font-size: 24px;
+    color: #ffb703;
+}
+
+
+/* Style Modal */
+
+.custom-modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+}
+
+.custom-modal-content {
+    background: #bfc0c0;
+    margin: auto;
+    padding: 32px 24px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, .18);
+    animation: fadeIn .3s;
+}
+
+.custom-modal-content div.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #bfc0c0;
+}
+
+.custom-modal-content div.modal-header h2 {
+    font-size: 16px;
+    color: #0d1b2a;
+}
+
+.custom-modal-content div.modal-header i {
+    font-size: 24px;
+    color: #bfc0c0;
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close-modal {
+    cursor: pointer;
+    transition: color .2s;
+}
+
+.close-modal:hover {
+    color: #c1121f;
+}
