@@ -20,7 +20,7 @@ body {
     border-right: 1px solid #e5e5e5;
     z-index: 1;
     left: 0;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .sidebar .box:nth-child(1) {
@@ -135,7 +135,7 @@ body {
 
 .dashboard-content {
     margin-left: 240px;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 32px;
 }
 
@@ -180,7 +180,7 @@ body {
 
 .content {
     margin-left: 240px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .breadcrumb {
@@ -342,9 +342,9 @@ td {
 }
 
 .content .box-content .box:nth-child(3) button {
-    color: white;
-    background-color: #bfc0c0;
-    border-width: 0;
+    color: #003049;
+    border: 1px solid #e5e5e5;
+    background-color: white;
     padding: 4px 16px;
     font-size: 14px;
     font-weight: 500;
@@ -370,6 +370,80 @@ td {
 .rating i {
     color: #f4a261;
 }
+
+
+/* Form Content Style */
+
+.form-content {
+    margin-left: 240px;
+    min-height: 100vh;
+}
+
+.box-form-content {
+    margin-top: 32px;
+}
+
+.input-container {
+    margin-bottom: 16px;
+}
+
+.input-container label {
+    display: block;
+    color: #003049;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.input-container input {
+    min-width: 400px;
+    max-width: 800px;
+    padding: 4px 16px;
+    color: #003049;
+    border-width: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.input-container select {
+    min-width: 430px;
+    max-width: 800px;
+    padding: 4px 16px;
+    color: #003049;
+    border-width: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+
+.input-container textarea {
+    min-height: 100px;
+    min-width: 400px;
+    max-width: 800px;
+    padding: 4px 16px;
+    color: #003049;
+    border-width: 0;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.button {
+    padding: 4px 16px;
+    color: white;
+    background-color: #06d6a0;
+    border-width: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.form-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Footer Style */
 
 .footer {
     margin-left: 240px;

@@ -12,7 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <title>Manajemen Pesan | Jokiin</title>
+    <title>Pembayaran | Jokiin</title>
 </head>
 
 <body>
@@ -30,15 +30,15 @@
             <i class="ri-group-line"></i>
             <a href="./user_management.html">Manajemen Pengguna</a>
         </div>
-        <div class="box active">
+        <div class="box">
             <i class="ri-message-2-line"></i>
-            <a href="#">Manajemen Pesan</a>
+            <a href="./mail_management.html">Manajemen Pesan</a>
         </div>
         <div class="box">
             <i class="ri-list-check-3"></i>
             <a href="./tasks_list.html">Tugas-tugas</a>
         </div>
-        <div class="box">
+        <div class="box active">
             <i class="ri-bank-card-line"></i>
             <a href="./payment.html">Pembayaran</a>
         </div>
@@ -64,7 +64,7 @@
             <div class="container">
                 <div class="box-header">
                     <div class="box">
-                        <h1>Manajemen Pesan</h1>
+                        <h1>Pembayaran</h1>
                     </div>
                     <div class="box">
                         <form action="">
@@ -83,12 +83,12 @@
             <div class="container">
                 <div class="breadcrumb">
                     <a href="./dashboard.html">Dashboard</a>
-                    <span>Manajemen Pesan</span>
+                    <span>Pembayaran</span>
                 </div>
 
                 <div class="box-content">
                     <div class="box">
-                        <h1 class="title">Tabel Manajemen Pesan</h1>
+                        <h1 class="title">Tabel Pembayaran</h1>
                         <div>
                             <form action="">
                                 <input type="text" name="cari" id="cari" placeholder="Cari dalam tabel">
@@ -100,20 +100,22 @@
                         <table class="data-table">
                             <tr>
                                 <th>No.</th>
-                                <th>Kode Pesan</th>
-                                <th>Kode Pengguna</th>
-                                <th>Kode Pesan</th>
-                                <th>Judul Pesan</th>
-                                <th>Isi Pesan</th>
+                                <th>Kode Pembayaran</th>
+                                <th>Kode Tugas</th>
+                                <th>Pembayaran 1</th>
+                                <th>Pembayaran 2</th>
+                                <th>Tanggal Pembayaran 1</th>
+                                <th>Tanggal Pembayaran 2</th>
                                 <th>Aksi</th>
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td>mail_2215</td>
-                                <td>user_2211</td>
-                                <td>mail_2123</td>
-                                <td>Pengajuan Berhasil Dilakukan</td>
-                                <td class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, itaque amet tempore eos voluptatem, commodi quos qui omnis odit alias iusto non, cum blanditiis mollitia voluptatibus tenetur voluptates sapiente dolorum.</td>
+                                <td>payment_2210</td>
+                                <td>task_2221</td>
+                                <td>Lunas</td>
+                                <td>Belum Lunas</td>
+                                <td>20/06/2025</td>
+                                <td>null</td>
                                 <td class="button-action">
                                     <button class="danger">Hapus</button>
                                 </td>

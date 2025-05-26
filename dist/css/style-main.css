@@ -354,7 +354,7 @@
 .profile-menu {
     margin-top: 64px;
     margin-bottom: 64px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 label {
@@ -428,7 +428,7 @@ label p {
 .edit-profile {
     margin-top: 64px;
     margin-bottom: 64px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .edit-profile .box-edit-profile {
@@ -474,7 +474,7 @@ label p {
 .detail {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     margin-top: 64px;
     margin-bottom: 64px;
 }
@@ -636,7 +636,7 @@ tr:not(:last-child) td {
     left: 0;
     top: 0;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     overflow: auto;
     background: rgba(0, 0, 0, 0.3);
     justify-content: center;
@@ -645,7 +645,7 @@ tr:not(:last-child) td {
 }
 
 .custom-modal-content {
-    background: #bfc0c0;
+    background: white;
     margin: auto;
     padding: 32px 24px;
     border-radius: 10px;
@@ -693,4 +693,26 @@ tr:not(:last-child) td {
 
 .close-modal:hover {
     color: #c1121f;
+}
+
+.download-container {
+    display: flex;
+    padding: 4px 10px;
+    width: 140px;
+    background-color: #0ead69;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+
+.download-container i {
+    font-size: 20px;
+    color: white;
+}
+
+.download-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
 }
