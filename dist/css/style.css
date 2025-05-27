@@ -812,25 +812,6 @@ header {
     .testimonial .box-testimonial .box .quote p:last-child {
         font-size: 8px;
     }
-    /* Footer Mobile Style */
-    .footer .box-footer .box:nth-child(1) h1 {
-        font-size: 16px;
-    }
-    .footer .box-footer .box:nth-child(2) {
-        max-width: 220px;
-    }
-    .footer .box-footer .box:nth-child(2) .box-wrap h2 {
-        font-size: 14px;
-    }
-    .footer .box-footer .box:nth-child(2) .box-wrap li {
-        margin-bottom: 2px;
-    }
-    .footer .box-footer .box:nth-child(2) .box-wrap a {
-        font-size: 10px;
-    }
-    .footer p {
-        font-size: 14px;
-    }
     /* Register Header Mobile Style */
     .header .box-register-header .box:nth-child(2) i {
         font-size: 18px;
@@ -861,8 +842,8 @@ header {
     .login-form .box-login-form .box:nth-child(2) form input {
         max-width: 260px;
     }
-    img:nth-child(1),
-    img:nth-child(2) {
+    .login-body img:nth-child(1),
+    .login-body img:nth-child(2) {
         display: none;
     }
     .box-login-form form label {
@@ -872,6 +853,28 @@ header {
         font-size: 14px;
     }
     .forget-password {
+        font-size: 14px;
+    }
+    .login-form .box-login-form .box:nth-child(2) button {
+        font-size: 14px;
+    }
+    /* Footer Mobile Style */
+    .footer .box-footer .box:nth-child(1) h1 {
+        font-size: 16px;
+    }
+    .footer .box-footer .box:nth-child(2) {
+        max-width: 220px;
+    }
+    .footer .box-footer .box:nth-child(2) .box-wrap h2 {
+        font-size: 14px;
+    }
+    .footer .box-footer .box:nth-child(2) .box-wrap li {
+        margin-bottom: 2px;
+    }
+    .footer .box-footer .box:nth-child(2) .box-wrap a {
+        font-size: 10px;
+    }
+    .footer p {
         font-size: 14px;
     }
 }

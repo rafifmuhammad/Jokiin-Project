@@ -716,3 +716,25 @@ tr:not(:last-child) td {
     color: white;
     font-size: 14px;
 }
+
+@media screen and (max-width: 430px) {
+    /* Footer Mobile Style */
+    .footer .box-footer .box:nth-child(1) h1 {
+        font-size: 16px;
+    }
+    .footer .box-footer .box:nth-child(2) {
+        max-width: 220px;
+    }
+    .footer .box-footer .box:nth-child(2) .box-wrap h2 {
+        font-size: 14px;
+    }
+    .footer .box-footer .box:nth-child(2) .box-wrap li {
+        margin-bottom: 2px;
+    }
+    .footer .box-footer .box:nth-child(2) .box-wrap a {
+        font-size: 10px;
+    }
+    .footer p {
+        font-size: 14px;
+    }
+}
