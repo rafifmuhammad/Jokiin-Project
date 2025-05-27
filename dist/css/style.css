@@ -646,7 +646,7 @@ header {
 
 /* Mobile Style */
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 600px) {
     body {
         overflow-x: none;
     }

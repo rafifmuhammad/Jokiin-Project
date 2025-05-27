@@ -52,7 +52,41 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Mobile Navigation Start -->
+                <div class="box menu-bar">
+                    <h1>Joki.In</h1>
+                    <i class="ri-menu-3-line"></i>
+                </div>
+                <div class="box menu-navigation">
+                    <svg width="24" height="12" viewBox="0 0 24 12" class="arrow">
+                        <polygon points="12,0 24,12 0,12" fill="#2a9d8f" />
+                    </svg>
+                    <ul>
+                        <li>
+                            <i class="ri-home-5-line"></i>
+                            <a href="./home.html">Beranda</a>
+                        </li>
+                        <li>
+                            <i class="ri-dashboard-line"></i>
+                            <a href="./dashboard/dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="active">
+                            <i class="ri-history-line"></i>
+                            <a href="./riwayat.html">Riwayat</a>
+                        </li>
+                        <li>
+                            <i class="ri-user-line"></i>
+                            <a href="./profile.html">Profile</a>
+                        </li>
+                        <li>
+                            <i class="ri-logout-circle-line"></i>
+                            <a href="./../index.html">Keluar</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+            <!-- Mobile Navigation End -->
+        </div>
         </div>
     </section>
     <!-- Navigation End -->
@@ -104,7 +138,7 @@
                     </div>
                     <div class="box-project-item">
                         <p>Rp. 400.000</p>
-                        <button class="button">Detail</button>
+                        <button class="button" onclick="location.href='./detail.html'">Detail</button>
                     </div>
                 </div>
                 <div class="project-item">
@@ -165,6 +199,8 @@
         </section>
     </footer>
     <!-- Footer End -->
+
+    <script src="./../dist/js/script.js"></script>
 </body>
 
 </html>

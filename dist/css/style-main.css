@@ -146,6 +146,7 @@
 .button {
     padding: 4px 16px;
     margin-top: 24px;
+    font-size: 14px;
     background-color: #06d6a0;
     border-width: 0;
     border-radius: 4px;
@@ -190,7 +191,7 @@
 
 .content .box-content .project-item .box-project-item:nth-child(1) {
     margin-top: 16px;
-    max-width: 320px;
+    width: 320px;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -235,7 +236,7 @@
 
 .content .box-content .project-item .box-project-item:nth-child(2) div.tag {
     margin-top: 32px;
-    max-width: 120px;
+    width: 120px;
     padding: 4px 16px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -264,7 +265,7 @@
 
 .content .box-content .project-item .box-project-item:nth-child(2) div.status {
     margin-top: 32px;
-    max-width: 160px;
+    width: 160px;
     padding: 4px 16px;
     text-align: center;
     border-radius: 4px;
@@ -277,7 +278,7 @@
 
 .content .box-content .project-item .box-project-item:nth-child(2) div.status.finish {
     margin-top: 32px;
-    max-width: 160px;
+    width: 160px;
     padding: 4px 16px;
     text-align: center;
     border-radius: 4px;
@@ -293,59 +294,6 @@
     font-weight: 500;
     font-size: 16px;
     margin-bottom: -16px;
-}
-
-
-/* Footer Style */
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 400px;
-    background-color: #3d405b;
-}
-
-.footer .box-footer {
-    display: flex;
-    justify-content: space-between;
-}
-
-.footer .box-footer .box:nth-child(1) h1 {
-    color: #0ead69;
-    font-size: 32px;
-}
-
-.footer .box-footer .box:nth-child(2) {
-    display: flex;
-    justify-content: space-around;
-    flex-grow: 1;
-    max-width: 500px;
-    color: white;
-}
-
-.footer .box-footer .box:nth-child(2) h2 {
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 8px;
-}
-
-.footer .box-footer .box:nth-child(2) li {
-    list-style-type: none;
-    margin-bottom: 6px;
-}
-
-.footer .box-footer .box:nth-child(2) li a {
-    text-decoration: none;
-    color: white;
-    font-size: 14px;
-}
-
-.footer p {
-    color: white;
-    margin-top: 64px;
-    text-align: center;
 }
 
 
@@ -455,7 +403,7 @@ label p {
 }
 
 .edit-profile .box-edit-profile .box select {
-    min-width: 480px;
+    width: 510px;
     margin-bottom: 16px;
     padding: 4px 16px;
     background-color: white;
@@ -535,7 +483,7 @@ tr:not(:last-child) td {
 .custom-table-vertical {
     border-collapse: separate;
     border-spacing: 0;
-    max-width: 320px;
+    width: 320px;
 }
 
 .custom-table-vertical th {
@@ -717,7 +665,315 @@ tr:not(:last-child) td {
     font-size: 14px;
 }
 
-@media screen and (max-width: 430px) {
+
+/* Footer Style */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    background-color: #3d405b;
+}
+
+.footer .box-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .box-footer .box:nth-child(1) h1 {
+    color: #0ead69;
+    font-size: 32px;
+}
+
+.footer .box-footer .box:nth-child(2) {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    max-width: 500px;
+    color: white;
+}
+
+.footer .box-footer .box:nth-child(2) h2 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.footer .box-footer .box:nth-child(2) li {
+    list-style-type: none;
+    margin-bottom: 6px;
+}
+
+.footer .box-footer .box:nth-child(2) li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+.footer p {
+    color: white;
+    margin-top: 64px;
+    text-align: center;
+}
+
+
+/* Display none Mobile Navigation */
+
+.navigation .box-navigation .box:nth-child(3) {
+    display: none;
+}
+
+.navigation .box-navigation .box:nth-child(4) {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    /* Navigation Mobile Style */
+    .navigation .box-navigation .box:nth-child(2) {
+        display: none;
+    }
+    .navigation .box-navigation .box:nth-child(1) {
+        display: none;
+    }
+    .navigation .box-navigation .box:nth-child(4) {
+        display: flex;
+    }
+    .navigation .box-navigation .box:nth-child(3) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex: 1;
+    }
+    .navigation .box-navigation .box:nth-child(3) h1 {
+        font-size: 24px;
+        color: #0ead69;
+    }
+    .navigation .box-navigation .box:nth-child(3) i {
+        border: 1px solid #e5e5e5;
+        padding: 8px;
+        border-radius: 4px;
+        color: #06d6a0;
+    }
+    .navigation .box-navigation .box:nth-child(4) {
+        display: none;
+        width: 300px;
+        position: absolute;
+        top: 70px;
+        right: 30px;
+        background-color: #2a9d8f;
+        border-radius: 4px;
+        transition: 0.5s ease;
+        opacity: 0;
+    }
+    .navigation .box-navigation .box:nth-child(4).menu-active {
+        display: flex;
+        opacity: 1;
+    }
+    .navigation .box-navigation .box:nth-child(4) svg.arrow {
+        position: absolute;
+        right: 15px;
+        top: -12px;
+    }
+    .navigation .box-navigation .box:nth-child(4) ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+    .navigation .box-navigation .box:nth-child(4) li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 8px;
+        border-bottom: 1px solid #e5e5e5;
+        padding: 0px 16px 8px 16px;
+    }
+    .navigation .box-navigation .box:nth-child(4) i {
+        font-size: 20px;
+        color: white;
+    }
+    .navigation .box-navigation .box:nth-child(4) a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .navigation .box-navigation .box:nth-child(4) li.active,
+    .navigation .box-navigation .box:nth-child(4) li.active a,
+    .navigation .box-navigation .box:nth-child(4) li.active i {
+        color: #344e41;
+    }
+    /* Hero Mobile Style */
+    .hero {
+        margin-bottom: -16px;
+    }
+    .hero .box-hero {
+        flex-direction: column-reverse;
+    }
+    .hero .box-hero .box:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero .box-hero .box:nth-child(1) h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    .hero .box-hero .box:nth-child(1) p {
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+    }
+    .hero .box-hero .box:nth-child(1) button.button {
+        align-self: center;
+    }
+    .hero .box-hero .box:nth-child(2) img {
+        width: 300px;
+    }
+    /* Content Mobile Style */
+    .content h1 {
+        font-size: 14px;
+    }
+    .content p {
+        font-size: 10px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(1) {
+        max-width: 32px;
+        max-height: 32px;
+        border-radius: 16px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) {
+        margin-left: -12px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) h2 {
+        font-size: 10px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) h3 {
+        max-width: 180px;
+        font-size: 10px;
+        margin-top: -4px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) p {
+        max-width: 180px;
+        font-size: 8px;
+        line-height: 12px;
+        margin-top: -4px;
+        margin-bottom: -18px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) div.tag {
+        max-width: 60px;
+        font-size: 8px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(3) {
+        margin-left: 8px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(3) p {
+        font-size: 8px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(3) button.button {
+        font-size: 8px;
+        padding: 4px 8px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) div.status-wrapper div.tag {
+        max-width: 80px;
+        font-size: 8px;
+        padding: 4px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) div.status {
+        max-width: 100px;
+        font-size: 8px;
+        padding: 4px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) div.status.finish {
+        max-width: 100px;
+        font-size: 8px;
+        padding: 4px;
+    }
+    .button {
+        font-size: 10px;
+        padding: 4px 12px;
+    }
+    /* Detail Mobile Style */
+    .detail h1 {
+        font-size: 14px;
+    }
+    /* Custom Table Mobile */
+    .custom-table {
+        display: block;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+    .custom-table th {
+        font-size: 10px;
+    }
+    .custom-table td {
+        font-size: 8px;
+    }
+    .custom-table-vertical th {
+        font-size: 10px;
+    }
+    .custom-table-vertical input {
+        font-size: 8px;
+    }
+    .custom-table .download-container {
+        max-width: 100px;
+        padding: 4px;
+    }
+    .custom-table .download-container i {
+        font-size: 14px;
+    }
+    .custom-table .download-container a.download-link {
+        font-size: 10px;
+    }
+    .rating i {
+        font-size: 14px;
+    }
+    .table-button {
+        font-size: 10px;
+    }
+    .status-table {
+        max-width: 80px;
+        font-size: 8px;
+        padding: 4px;
+    }
+    /* Profile Mobile Style */
+    label img {
+        width: 180px;
+        height: 180px;
+    }
+    label h1 {
+        font-size: 16px;
+    }
+    label p {
+        font-size: 12px;
+    }
+    .profile-menu .box-profile-menu .box {
+        width: 100%;
+    }
+    .profile-menu .box-profile-menu .box div i {
+        font-size: 18px;
+    }
+    .profile-menu .box-profile-menu .box i {
+        font-size: 18px;
+    }
+    .profile-menu .box-profile-menu .box div p {
+        font-size: 12px;
+    }
+    /* Edit Profile Mobile Style */
+    .edit-profile .box-edit-profile .box label {
+        font-size: 10px;
+    }
+    .edit-profile .box-edit-profile .box input {
+        width: 240px;
+        font-size: 10px;
+    }
+    .edit-profile .box-edit-profile .box select {
+        width: 270px;
+        font-size: 10px;
+    }
     /* Footer Mobile Style */
     .footer .box-footer .box:nth-child(1) h1 {
         font-size: 16px;
