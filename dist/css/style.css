@@ -362,7 +362,7 @@ header {
 
 .header {
     display: flex;
-    border-bottom: 1px solid #bfc0c0;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-register-header {
@@ -419,7 +419,7 @@ header {
 }
 
 .form input {
-    min-width: 320px;
+    width: 320px;
     padding: 8px 16px;
     margin-top: 8px;
     border-radius: 4px;
@@ -430,7 +430,7 @@ header {
 
 .form select {
     margin-top: 8px;
-    min-width: 350px;
+    width: 350px;
     padding: 8px 16px;
     background-color: white;
     border: 1px solid #bfc0c0;
@@ -547,7 +547,7 @@ header {
 }
 
 .login-form .box-login-form form input {
-    min-width: 320px;
+    width: 320px;
     padding: 8px 16px;
     margin-top: 8px;
     border-radius: 4px;
@@ -577,7 +577,7 @@ header {
 
 .forget-password {
     margin-top: 32px;
-    min-width: 300px;
+    width: 300px;
     text-align: center;
     color: #3a86ff;
     text-decoration: none;
@@ -647,6 +647,9 @@ header {
 /* Mobile Style */
 
 @media screen and (max-width: 430px) {
+    body {
+        overflow-x: none;
+    }
     .button {
         padding: 4px 10px;
         font-size: 10px;
@@ -826,6 +829,49 @@ header {
         font-size: 10px;
     }
     .footer p {
+        font-size: 14px;
+    }
+    /* Register Header Mobile Style */
+    .header .box-register-header .box:nth-child(2) i {
+        font-size: 18px;
+    }
+    .header .box-register-header .box:nth-child(2) a {
+        font-size: 14px;
+    }
+    /* Form Register Mobile Style */
+    .form input {
+        max-width: 280px;
+    }
+    .form select {
+        max-width: 320px;
+    }
+    .form button {
+        font-size: 14px;
+    }
+    .form .box-form .box:nth-child(2) img {
+        display: none;
+    }
+    .form .box:nth-child(1) div:last-child a {
+        font-size: 14px;
+    }
+    /* Login Mobile Style */
+    .login-form .box-login-form .box:nth-child(1) {
+        display: none;
+    }
+    .login-form .box-login-form .box:nth-child(2) form input {
+        max-width: 260px;
+    }
+    img:nth-child(1),
+    img:nth-child(2) {
+        display: none;
+    }
+    .box-login-form form label {
+        font-size: 14px;
+    }
+    .login-form .box-login-form .box:nth-child(2) form a {
+        font-size: 14px;
+    }
+    .forget-password {
         font-size: 14px;
     }
 }
