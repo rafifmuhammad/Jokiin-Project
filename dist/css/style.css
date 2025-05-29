@@ -667,6 +667,9 @@ header {
         border-radius: 4px;
         cursor: pointer;
     }
+    .home-navigation .box-home-navigation .box:nth-child(1) h2 {
+        font-size: 24px;
+    }
     .home-navigation .box-home-navigation .box:nth-child(3) {
         min-width: 280px;
         display: flex;
@@ -678,6 +681,7 @@ header {
         padding: 16px 0;
         border-radius: 6px;
         opacity: 0;
+        z-index: 1;
         transition: all .3s ease;
     }
     .home-navigation .box-home-navigation .box:nth-child(3).menu-navigation.menu-active {
@@ -718,50 +722,55 @@ header {
         z-index: 0;
     }
     .hero h1 {
-        font-size: 20px;
+        font-size: 16px;
     }
     .hero p {
         max-width: 320px;
         font-size: 20px;
-        font-size: 14px;
+        font-size: 10px;
     }
     .hero i {
         font-size: 16px;
     }
     /* Category Mobile Style */
     .heading {
-        font-size: 16px;
+        font-size: 12px;
     }
     .category .box-category {
         display: flex;
         flex-direction: column;
         gap: 16px;
+        margin-top: -32px;
     }
     .category .box-category .box {
-        max-width: 120px;
-        max-height: 120px;
+        max-width: 100px;
+        max-height: 100px;
     }
     .category .box-category .box i {
-        font-size: 64px;
+        font-size: 32px;
     }
     .category .box-category .box p {
-        font-size: 10px;
+        font-size: 8px;
     }
     /* Content Mobile Style */
+    .content .box-content {
+        margin-top: -32px;
+    }
     .content .box-content .box .box-wrap {
         padding: 12px;
         right: 20px;
         max-width: 100px;
     }
     .content .box-content .box .box-wrap div i {
-        font-size: 14px;
+        font-size: 10px;
     }
     .content .box-content .box .box-wrap div p {
-        font-size: 12px;
+        font-size: 8px;
     }
     .content .box-content .box .box-wrap h1 {
-        font-size: 10px;
+        font-size: 8px;
         margin-bottom: 4px;
+        margin-top: -4px;
     }
     .content .box-content .box .box-wrap p {
         font-size: 6px;
@@ -773,44 +782,51 @@ header {
         max-width: 100px;
     }
     .content .box-content .box .box-wrap-right div i {
-        font-size: 14px;
+        font-size: 20px;
     }
     .content .box-content .box .box-wrap-right div p {
-        font-size: 12px;
+        font-size: 8px;
     }
     .content .box-content .box .box-wrap-right h1 {
-        font-size: 10px;
+        font-size: 8px;
         margin-bottom: 4px;
+        margin-top: -4px;
     }
     .content .box-content .box .box-wrap-right p {
         font-size: 6px;
         line-height: 8px;
     }
     .content .box-content .box img {
-        max-width: 220px;
+        max-width: 160px;
     }
     /* Testimonial Mobile Style */
     .testimonial .box-testimonial {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 24px;
+    }
+    .testimonial .box-testimonial .box .quote div {
+        max-width: 140px;
     }
     .testimonial .box-testimonial .box img {
-        width: 160px;
+        width: 140px;
+        max-height: 100px;
+        margin-bottom: -10px;
     }
     .testimonial .box-testimonial .box .quote i {
-        font-size: 14px;
+        font-size: 10px;
         margin-right: -10px;
     }
     .testimonial .box-testimonial .box .quote p {
         max-width: 100px;
-        font-size: 8px;
+        font-size: 6px;
+        margin-bottom: -12px;
     }
     .testimonial .box-testimonial .box .quote h2 {
-        font-size: 10px;
+        font-size: 8px;
     }
     .testimonial .box-testimonial .box .quote p:last-child {
-        font-size: 8px;
+        font-size: 6px;
     }
     /* Register Header Mobile Style */
     .header .box-register-header .box:nth-child(2) i {

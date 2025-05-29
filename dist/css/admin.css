@@ -409,7 +409,7 @@ td {
 }
 
 .input-container input {
-    min-width: 400px;
+    width: 400px;
     max-width: 800px;
     padding: 4px 16px;
     color: #003049;
@@ -419,18 +419,19 @@ td {
 }
 
 .input-container select {
-    min-width: 430px;
+    width: 430px;
     max-width: 800px;
     padding: 4px 16px;
     color: #003049;
     border-width: 0;
     border: 1px solid #e5e5e5;
     border-radius: 4px;
+    background-color: white;
 }
 
 .input-container textarea {
     min-height: 100px;
-    min-width: 400px;
+    width: 400px;
     max-width: 800px;
     padding: 4px 16px;
     color: #003049;
@@ -494,12 +495,25 @@ td {
     margin-left: 80px;
 }
 
+.form-content.shrink {
+    margin-left: 80px;
+}
+
 .footer.shrink {
     margin-left: 80px;
 }
 
 
 /* Footer Style */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    font-size: 8px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
 
 .footer p {
     text-align: center;
@@ -512,6 +526,16 @@ td {
     body,
     html {
         overflow-x: hidden;
+    }
+    /* Sidebar Mobile Style */
+    .sidebar .box:nth-child(1) h1 {
+        font-size: 14px;
+    }
+    .sidebar .box:not(:nth-child(1)) i {
+        font-size: 14px;
+    }
+    .sidebar .box:not(:nth-child(1)) a {
+        font-size: 10px;
     }
     /* Header Mobile Style */
     .header {
@@ -541,7 +565,32 @@ td {
     .dashboard-content .box-dashboard-content .box p {
         font-size: 14px;
     }
+    /* Form Content Mobile Style */
+    .input-container {
+        margin-top: -8px;
+    }
+    .input-container label {
+        font-size: 10px;
+    }
+    .input-container input {
+        max-width: 200px;
+        font-size: 8px;
+    }
+    .input-container textarea {
+        max-width: 200px;
+        font-size: 8px;
+    }
+    .input-container select {
+        font-size: 8px;
+        max-width: 233px;
+    }
+    .button {
+        font-size: 8px;
+    }
     /* Breadcrumb Mobile Style */
+    .breadcrumb {
+        max-width: 220px;
+    }
     .breadcrumb a {
         font-size: 10px;
     }
@@ -615,7 +664,15 @@ td {
         text-align: center;
     }
     /* Footer Mobile Style */
-    .footer {
-        margin-left: 60px;
+    .footer p {
+        font-size: 10px;
+    }
+    .footer.shrink {
+        margin-left: 0 !important;
+        padding: 8px 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 }
