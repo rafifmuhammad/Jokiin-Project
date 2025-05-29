@@ -447,10 +447,11 @@ header {
     padding: 4px 16px;
     border-width: 0;
     background-color: #06d6a0;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
     color: white;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .form .box:nth-child(1) div:last-child {
@@ -563,7 +564,7 @@ header {
     color: white;
     border-width: 0;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 14px;
     cursor: pointer;
 }
 
@@ -583,6 +584,56 @@ header {
     text-decoration: none;
     border-bottom: 1px solid #3a86ff;
 }
+
+
+/* Modal Alert Style */
+
+.modal-alert {
+    position: absolute;
+    width: 80%;
+    top: 40px;
+    left: 10%;
+    right: 10%;
+    background-color: #f26a8d;
+    border-radius: 12px;
+    transition: 1s ease-in;
+    opacity: 0;
+}
+
+.box-modal-alert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 16px 24px 16px;
+}
+
+.box-modal-alert .box:nth-child(1) {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.box-modal-alert .box:nth-child(1) i {
+    font-size: 32px;
+    color: white;
+}
+
+.box-modal-alert .box:nth-child(1) {
+    font-size: 16px;
+    color: white;
+}
+
+.box-modal-alert .box:nth-child(2) i {
+    font-size: 24px;
+    color: white;
+    padding: 4px;
+    background-color: #c9184a;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+
+/* If Modal Active */
 
 
 /* Footer Style */

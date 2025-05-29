@@ -637,7 +637,7 @@ td {
         -webkit-overflow-scrolling: touch !important;
     }
     .data-table {
-        min-width: 1800px !important;
+        min-width: 1900px !important;
         width: max-content !important;
     }
     .data-table th,
