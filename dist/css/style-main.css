@@ -578,7 +578,6 @@ tr:not(:last-child) td {
 
 .custom-modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
     z-index: 9999;
     left: 0;
@@ -895,6 +894,10 @@ tr:not(:last-child) td {
     .button {
         font-size: 10px;
         padding: 4px 12px;
+    }
+    /* Custom Modal Mobile */
+    .custom-modal-content {
+        max-width: 300px;
     }
     /* Detail Mobile Style */
     .detail h1 {

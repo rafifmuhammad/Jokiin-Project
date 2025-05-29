@@ -17,41 +17,41 @@
 
 <body>
     <!-- Sidebar Start -->
-    <section class="sidebar">
+    <section class="sidebar menu-navigation menu-active">
         <div class="box">
             <h1>Joki.In</h1>
             <i class="ri-menu-2-line"></i>
         </div>
         <div class="box">
-            <i class="ri-dashboard-line"></i>
+            <i class="ri-dashboard-line" onclick="location.href='dashboard.html'"></i>
             <a href="./dashboard.html">Dashboard</a>
         </div>
         <div class="box">
-            <i class="ri-group-line"></i>
+            <i class="ri-group-line" onclick="location.href='user_management.html'"></i>
             <a href="./user_management.html">Manajemen Pengguna</a>
         </div>
         <div class="box active">
-            <i class="ri-message-2-line"></i>
+            <i class="ri-message-2-line" onclick="location.href='mail_management.html'"></i>
             <a href="#">Manajemen Pesan</a>
         </div>
         <div class="box">
-            <i class="ri-list-check-3"></i>
+            <i class="ri-list-check-3" onclick="location.href='tasks_list.html'"></i>
             <a href="./tasks_list.html">Tugas-tugas</a>
         </div>
         <div class="box">
-            <i class="ri-bank-card-line"></i>
+            <i class="ri-bank-card-line" onclick="location.href='payment.html'"></i>
             <a href="./payment.html">Pembayaran</a>
         </div>
         <div class="box">
-            <i class="ri-star-half-line"></i>
+            <i class="ri-star-half-line" onclick="location.href='rating.html'"></i>
             <a href="./rating.html">Penilaian</a>
         </div>
         <div class="box">
-            <i class="ri-home-5-line"></i>
+            <i class="ri-home-5-line" onclick="location.href='./../home.html'"></i>
             <a href="./../home.html">Beranda</a>
         </div>
         <div class="box">
-            <i class="ri-logout-circle-line"></i>
+            <i class="ri-logout-circle-line" onclick="location.href='./../../index.html'"></i>
             <a href="./../../index.html">Keluar</a>
         </div>
     </section>
@@ -60,7 +60,7 @@
     <!-- Main-app -->
     <div class="main-app">
         <!-- Header Start -->
-        <section class="header">
+        <section class="header shrink">
             <div class="container">
                 <div class="box-header">
                     <div class="box">
@@ -79,7 +79,7 @@
         <!-- Header End -->
 
         <!-- Content Start -->
-        <section class="content">
+        <section class="content shrink">
             <div class="container">
                 <div class="breadcrumb">
                     <a href="./dashboard.html">Dashboard</a>
@@ -97,28 +97,32 @@
                         </div>
                     </div>
                     <div class="box">
-                        <table class="data-table">
-                            <tr>
-                                <th>No.</th>
-                                <th>Kode Pesan</th>
-                                <th>Kode Pengguna</th>
-                                <th>Kode Pesan</th>
-                                <th>Judul Pesan</th>
-                                <th>Isi Pesan</th>
-                                <th>Aksi</th>
-                            </tr>
-                            <tr>
-                                <td>1</td>
-                                <td>mail_2215</td>
-                                <td>user_2211</td>
-                                <td>mail_2123</td>
-                                <td>Pengajuan Berhasil Dilakukan</td>
-                                <td class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, itaque amet tempore eos voluptatem, commodi quos qui omnis odit alias iusto non, cum blanditiis mollitia voluptatibus tenetur voluptates sapiente dolorum.</td>
-                                <td class="button-action">
-                                    <button class="danger">Hapus</button>
-                                </td>
-                            </tr>
-                        </table>
+                        <div class="table-responsive">
+                            <table class="data-table">
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Kode Pesan</th>
+                                    <th>Kode Pengguna</th>
+                                    <th>Kode Pesan</th>
+                                    <th>Judul Pesan</th>
+                                    <th>Isi Pesan</th>
+                                    <th>Aksi</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>mail_2215</td>
+                                    <td>user_2211</td>
+                                    <td>mail_2123</td>
+                                    <td>Pengajuan Berhasil Dilakukan</td>
+                                    <td class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, itaque amet tempore eos voluptatem, commodi quos qui omnis odit alias iusto non, cum blanditiis mollitia voluptatibus tenetur voluptates sapiente
+                                        dolorum.
+                                    </td>
+                                    <td class="button-action">
+                                        <button class="danger">Hapus</button>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                     <div class="box">
                         <button>Sebelumnya</button>
@@ -132,7 +136,7 @@
 
         <!-- Footer Start -->
         <footer>
-            <section class="footer">
+            <section class="footer shrink">
                 <p>Copyright &copy; 2025 Rafifbanner.</p>
             </section>
         </footer>
