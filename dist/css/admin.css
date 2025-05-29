@@ -494,13 +494,12 @@ td {
     margin-left: 80px;
 }
 
-.footer.shrink
-/* Footer Style */
-
-.footer {
-    margin-left: 240px;
-    padding: 20px;
+.footer.shrink {
+    margin-left: 80px;
 }
+
+
+/* Footer Style */
 
 .footer p {
     text-align: center;

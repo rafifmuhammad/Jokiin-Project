@@ -2,11 +2,13 @@ const menuNav = document.querySelector('.menu-navigation');
 const menuBar = document.querySelector('.menu-bar');
 const headerShrink = document.querySelector('.header');
 const dashboardContentShrink = document.querySelector('.dashboard-content');
+const contentShrink = document.querySelector('.content');
 const footerShrink = document.querySelector('.footer');
 
 menuBar.addEventListener('click', () => {
     menuNav.classList.toggle('menu-active');
-    headerShrink.classList.toggle('shrink');
-    dashboardContentShrink.classList.toggle('shrink')
-    footerShrink.classList.toggle('shrink');
+    if (headerShrink) headerShrink.classList.toggle('shrink');
+    if (dashboardContentShrink) dashboardContentShrink.classList.toggle('shrink');
+    if (contentShrink) contentShrink.classList.toggle('shrink');
+    if (footerShrink) footerShrink.classList.toggle('shrink');
 });
