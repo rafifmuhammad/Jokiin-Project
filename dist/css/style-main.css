@@ -33,6 +33,10 @@
 
 .navigation .box-navigation .box:nth-child(1) h2 {
     margin-right: 64px;
+}
+
+.navigation .box-navigation .box:nth-child(1) a {
+    text-decoration: none;
     color: #0ead69;
 }
 
