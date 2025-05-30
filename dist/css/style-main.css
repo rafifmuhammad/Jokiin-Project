@@ -583,7 +583,6 @@ tr:not(:last-child) td {
     text-decoration: none;
     color: #023e8a;
     font-size: 14px;
-    display: none;
 }
 
 .payment-info {
@@ -591,7 +590,6 @@ tr:not(:last-child) td {
     align-items: center;
     padding: 4px 8px;
     gap: 4px;
-    display: none;
 }
 
 .payment-info i {
@@ -605,6 +603,7 @@ tr:not(:last-child) td {
 }
 
 .confirm-payment {
+    display: none;
     font-size: 14px;
     background-color: #023e8a;
     padding: 4px 12px;

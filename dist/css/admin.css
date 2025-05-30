@@ -277,7 +277,7 @@ body {
 }
 
 .data-table.long-table {
-    width: max-content;
+    min-width: max-content;
 }
 
 .data-table tr,
