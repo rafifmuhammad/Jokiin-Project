@@ -573,6 +573,30 @@ tr:not(:last-child) td {
     color: #ffb703;
 }
 
+.button-payment {
+    padding: 8px;
+    text-decoration: none;
+    color: #023e8a;
+    font-size: 14px;
+}
+
+.payment-info {
+    display: flex;
+    align-items: center;
+    padding: 4px 8px;
+    gap: 4px;
+}
+
+.payment-info i {
+    font-size: 18px;
+    color: #bfc0c0;
+}
+
+.payment-info p {
+    font-size: 12px;
+    color: #bfc0c0;
+}
+
 
 /* Style Modal */
 
@@ -662,6 +686,47 @@ tr:not(:last-child) td {
     text-decoration: none;
     color: white;
     font-size: 14px;
+}
+
+.payment-form {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.payment-form .box-payment-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 64px 0;
+}
+
+.payment-form .box-payment-form .box:nth-child(1) div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 4px;
+    margin-bottom: 16px;
+}
+
+.payment-form .box-payment-form .box:nth-child(1) label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #003049;
+}
+
+.payment-form .box-payment-form .box:nth-child(1) input {
+    width: 500px;
+    padding: 4px 16px;
+    border-radius: 4px;
+    border-width: 0;
+    border: 1px solid #e5e5e5;
+}
+
+.payment-form .box-payment-form .box:nth-child(2) img {
+    width: 760px;
 }
 
 
@@ -976,6 +1041,27 @@ tr:not(:last-child) td {
     .edit-profile .box-edit-profile .box select {
         width: 270px;
         font-size: 10px;
+    }
+    /* Payment Mobile Style */
+    .button-payment {
+        font-size: 10px;
+    }
+    .payment-info p {
+        font-size: 8px;
+    }
+    .payment-info i {
+        font-size: 10px;
+    }
+    /* Payment Form Mobile */
+    .payment-form .box-payment-form .box:nth-child(1) label {
+        font-size: 10px;
+    }
+    .payment-form .box-payment-form .box:nth-child(1) input {
+        max-width: 260px;
+        font-size: 10px;
+    }
+    .payment-form .box-payment-form .box:nth-child(2) img {
+        display: none;
     }
     /* Footer Mobile Style */
     .footer .box-footer .box:nth-child(1) h1 {
