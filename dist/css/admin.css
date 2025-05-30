@@ -276,19 +276,22 @@ body {
     border-spacing: 0;
 }
 
+.data-table.long-table {
+    width: max-content;
+}
+
 .data-table tr,
 th,
 td {
     border: 1px solid rgba(0, 0, 0, 0.08);
-    padding: 8px;
+    padding: 6px;
     text-align: center;
 }
 
 .data-table td.desc {
     text-align: justify;
     line-height: 16px;
-    max-width: 140px;
-    /* Batasi lebar maksimum cell */
+    max-width: 200px;
     white-space: normal;
     word-break: break-word;
 }
@@ -305,16 +308,18 @@ td {
     font-size: 14px;
 }
 
-.data-table td.button-action {
+.data-table td.button-action>div {
+    display: flex;
     padding: 8px;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 .data-table td.button-action button {
     color: white;
     background-color: #06d6a0;
     border-width: 0;
-    padding: 4px 16px;
+    padding: 4px 10px;
     border-radius: 4px;
     cursor: pointer;
     margin: 0 8px;
@@ -355,6 +360,16 @@ td {
     gap: 8px;
 }
 
+.data-table a {
+    text-decoration: none;
+    color: #0ead69;
+}
+
+.data-table a i {
+    font-size: 14px;
+    color: #06d6a0;
+}
+
 .content .box-content .box:nth-child(3) button {
     color: #003049;
     border: 1px solid #e5e5e5;
@@ -371,6 +386,7 @@ td {
     background-color: #c1121f;
     padding: 4px 12px;
     border-radius: 4px;
+    font-size: 10px;
 }
 
 .status.finished {
@@ -637,7 +653,7 @@ td {
         -webkit-overflow-scrolling: touch !important;
     }
     .data-table {
-        min-width: 2000px !important;
+        min-width: 2400px !important;
         width: max-content !important;
     }
     .data-table th,
