@@ -945,3 +945,69 @@ header {
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 340px) {
+    /* Navigation Mobile Small Style */
+    .header .box-register-header .box:nth-child(1) h1 {
+        font-size: 12px;
+    }
+    .header .box-register-header .box:nth-child(2) {
+        max-width: 70px;
+        padding: 4px;
+    }
+    .header .box-register-header .box:nth-child(2) i {
+        font-size: 14px;
+        margin-right: -2px;
+    }
+    .header .box-register-header .box:nth-child(2) a {
+        font-size: 10px;
+    }
+    /* Login Mobile Small Style */
+    .login-form .box-login-form .box:nth-child(2) label {
+        font-size: 10px;
+    }
+    .login-form .box-login-form .box:nth-child(2) input {
+        font-size: 10px;
+        margin-top: -8px;
+    }
+    .login-form .box-login-form .box:nth-child(2) form button {
+        font-size: 10px;
+    }
+    .login-form .box-login-form .box:nth-child(2) form a {
+        font-size: 10px;
+    }
+    .login-form .box-login-form .box:nth-child(2) a {
+        font-size: 10px;
+    }
+    /* Register Form Mobile Small Style */
+    .form .box-form .box:nth-child(1) label {
+        font-size: 12px;
+    }
+    .form .box-form .box:nth-child(1) input {
+        max-width: 240px;
+        font-size: 10px;
+    }
+    .form .box-form .box:nth-child(1) select {
+        max-width: 275px;
+        font-size: 10px;
+    }
+    .form .box-form .box:nth-child(1) button {
+        font-size: 10px;
+    }
+    .form .box:nth-child(1) div:last-child a {
+        font-size: 10px;
+    }
+    /* Footer Mobile Small Style */
+    .footer p {
+        font-size: 10px;
+    }
+    .footer .box-footer .box:nth-child(1) h1 {
+        font-size: 10px;
+    }
+    .footer .box-footer .box.box:nth-child(2) .box-wrap h2 {
+        font-size: 10px;
+    }
+    .footer .box-footer .box.box:nth-child(2) .box-wrap ul li {
+        font-size: 8px;
+    }
+}

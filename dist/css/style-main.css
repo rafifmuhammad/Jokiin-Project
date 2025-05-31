@@ -1114,3 +1114,76 @@ tr:not(:last-child) td {
         font-size: 14px;
     }
 }
+
+@media screen and (max-width: 340px) {
+    /* Hero Mobile Small Style */
+    .hero .box-hero .box:nth-child(1) h2 {
+        font-size: 10px;
+    }
+    .hero .box-hero .box:nth-child(1) p {
+        font-size: 8px;
+        line-height: 14px;
+    }
+    .hero .box-hero .box:nth-child(2) img {
+        width: 140px;
+        height: fit-content;
+    }
+    /* Content Mobile Small Style */
+    .content h1 {
+        font-size: 10px;
+    }
+    .content p {
+        font-size: 8px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(1) {
+        width: 24px;
+        height: 24px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) h2 {
+        font-size: 8px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) h3 {
+        font-size: 8px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) p {
+        font-size: 6px;
+        line-height: 10px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) div.tag {
+        max-width: 50px;
+        font-size: 6px;
+        padding: 4px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) div.status-wrapper div.tag {
+        max-width: 50px;
+        font-size: 6px;
+        padding: 4px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(2) div.status-wrapper div.status {
+        max-width: 70px;
+        font-size: 6px;
+        padding: 4px;
+        margin-left: 4px;
+    }
+    .content .box-content .project-item .box-project-item:nth-child(3) button.button {
+        font-size: 6px;
+        padding: 4px;
+    }
+    /* Button Mobile Small Style */
+    .button {
+        font-size: 8px;
+    }
+    /* Footer Mobile Small Style */
+    .footer p {
+        font-size: 10px;
+    }
+    .footer .box-footer .box:nth-child(1) h1 {
+        font-size: 10px;
+    }
+    .footer .box-footer .box.box:nth-child(2) .box-wrap h2 {
+        font-size: 10px;
+    }
+    .footer .box-footer .box.box:nth-child(2) .box-wrap ul li {
+        font-size: 8px;
+    }
+}
